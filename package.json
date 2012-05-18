@@ -1,0 +1,15 @@
+{
+	"name": "basejs",
+	"description": "Simple class-based inheritance for JavaScript (based on Dean Edwards' Base.js).",
+	"version": "1.1.0a",
+	"author": {
+		"name": "Kenneth Powers",
+		"email": "mail@kenpowers.net"
+	},
+	"main": "Base",
+	"keywords": [
+		"class",
+		"inheritance",
+		"Dean Edwards"
+	]
+}
