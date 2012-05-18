@@ -19,7 +19,7 @@ The second way to get started is to include the script as a dependency for an AM
 The third and final way to get started is to `require` the module in a CommonJS environment (such as [node.js](http://nodejs.org/)):
 
 	:::javascript
-	var Base = require('./path/to/Base.js');
+	var Base = require('./path/to/Base');
 
 If you are using [node.js](http://nodejs.org/) with [npm](http://npmjs.org) then you can also install the module as follows:
 
@@ -45,7 +45,7 @@ Moving forward, whichever path you chose above you should now have a `Base` obje
 			this.say('Yum!');
 		},
 		say: function (message) {
-			console.log((this.name !== '' ? name + ': ' : name) + message);
+			console.log((this.name !== '' ? this.name + ': ' : this.name) + message);
 		}
 	});
 
