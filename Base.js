@@ -58,7 +58,7 @@
 			return (type === 'object') ? klass : constructor.valueOf();
 		};
 		extend.call(klass, _static);
-		// class initialisation
+		// class initialization
 		if (typeof klass.init === 'function') klass.init();
 		return klass;
 	};
@@ -89,7 +89,7 @@
 				this[source] = value;
 			} else if (source) { // extending with an object literal
 				var extend = Base.prototype.extend;
-				// if this object has a customised extend method then use it
+				// if this object has a customized extend method then use it
 				if (!Base._prototyping && typeof this !== 'function') {
 					extend = this.extend || extend;
 				}
@@ -113,7 +113,7 @@
 		}
 	};
 
-	// initialise
+	// initialize
 	Base = Base.extend({
 		constructor: function () {
 			this.extend(arguments[0]);
