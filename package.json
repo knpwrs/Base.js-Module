@@ -1,7 +1,7 @@
 {
 	"name": "basejs",
 	"description": "Simple class-based inheritance for JavaScript (based on Dean Edwards' Base.js).",
-	"version": "1.1.0a",
+	"version": "1.1.1",
 	"author": {
 		"name": "Kenneth Powers",
 		"email": "mail@kenpowers.net"

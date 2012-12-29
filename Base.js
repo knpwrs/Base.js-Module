@@ -3,24 +3,19 @@
   Updated to pass JSHint and converted into a module by Kenneth Powers
   License: http://www.opensource.org/licenses/mit-license.php
 */
-/*globals define:true window:true module:true*/
-/*jshint boss:true eqeqeq:true*/
-(function () {
+/*global define:true module:true*/
+/*jshint eqeqeq:true*/
+(function (name, global, definition) {
+  if (typeof module !== 'undefined') {
+    module.exports = definition();
+  } else if (typeof define !== 'undefined' && typeof define.amd === 'object') {
+    define(definition);
+  } else {
+    global[name] = definition();
+  }
+})('Base', this, function () {
   // Base Object
   var Base = function () {};
-
-  // Define AMD module or attach Base object to head object
-  if (typeof define !== 'undefined')
-    // AMD Module
-    define(function () {
-      return Base;
-    });
-  else if (typeof window !== 'undefined')
-    // Browser
-    window.Base = Base;
-  else
-    // CommonJS
-    module.exports = Base;
 
   // Implementation
   Base.extend = function (_instance, _static) { // subclass
@@ -144,4 +139,7 @@
       return String(this.valueOf());
     }
   });
-})();
+
+  // Return Base implementation
+  return Base;
+});
