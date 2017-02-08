@@ -1,4 +1,6 @@
 # Base.js Module
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/knpwrs/Base.js-Module.svg)](https://greenkeeper.io/)
 This is a modular version of Dean Edward's [Base.js](http://dean.edwards.name/weblog/2006/03/base/). The same script will work the same in CommonJS Environments (such as [node.js](http://nodejs.org/)), AMD Environments (such as [RequireJS](http://requirejs.org/)), and plain browser environments.
 
 In addition to modularizing the code I have also updated the entire implementation so that it passes [JSHint](http://www.jshint.com/) (with default settings in the installed version -- the web version turns on `strict` by default).
